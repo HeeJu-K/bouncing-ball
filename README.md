@@ -1,6 +1,27 @@
-# Getting Started with Create React App
+# Bouncing Ball Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple project built with [React](https://react.dev/) that uses mouse drag and release to throw balls.
+
+
+## Demo Video
+
+[![Ball Bounce Demo](http://img.youtube.com/vi/jw5GPUy_MyI/0.jpg)](https://youtu.be/jw5GPUy_MyI)
+
+
+## Features
+1. Drag and release to throw a ball, the cursor speed will determine the initial speed of the ball.
+2. There are two balls by default, when a ball collides another, the two balls makes inelastic collision.
+3. When a ball collide with the wall, inelastic collision happens and the speed of the ball decreases.
+
+
+### Other Possible Features
+
+* Provide the selection of ball masses
+* Change number of balls
+* Select type of collision (elastic / inelastic)
+* Add "friction" when sliding, make speed reduce even without collision
+* Add ball bounce while being dragged
+* Add more UI
 
 ## Available Scripts
 
@@ -39,32 +60,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
