@@ -23,6 +23,18 @@ This is a simple project built with [React](https://react.dev/) that uses mouse 
 * Add ball bounce while being dragged
 * Add more UI
 
+## Code Explanation
+* `function Ball` component draws a Ball on the page
+    * it takes color, initial position, and size as argument
+    * a `div` with set styles are returned
+* custom hook `useDraggableBall` manages state and behavior related to draggable balls
+    * it manages states and behaviors of the ball such as position, velocity, dragging state, wall collision detection *(Wall Collision is inherent in each balls, therefore it is included here rather than `App.js`)*
+* Main App Component
+    * instantizes state and behavior of the draggable balls with `useDraggableBall` custom hook 
+    * based on position of the two balls, handle ball to ball collisions
+    * include event handlers (`onMouseDown`, `onMouseMove`, `onMouseUp`) for mouse interactions
+
+
 ## Available Scripts
 
 In the project directory, you can run:
