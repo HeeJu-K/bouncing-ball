@@ -31,7 +31,7 @@ const workercode = () => {
             return (a.ethPrice + a.gasFee) - (b.ethPrice + b.gasFee)
         });
 
-        return prices;
+        return prices.slice(0, 5);
     }
 }
 

@@ -63,7 +63,7 @@ const LowestPrice = () => {
                     onClick={handleClick}>{buttonText}</button>
                 <div className="text-xs">
                     {sortedPrices&&<p>Available Prices: </p>}
-                    {sortedPrices?.slice(0, 5).map((pricePair, index) => {
+                    {sortedPrices?.map((pricePair, index) => {
                         return (<p key={index}>ETH price: {pricePair.ethPrice.toFixed(6)} USD, gas fee: {pricePair.gasFee.toFixed(6)}</p>)
                     })}
                 </div>
