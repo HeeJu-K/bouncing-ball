@@ -1,7 +1,6 @@
 const workercode = () => {
 
     onmessage = function (event) {
-        console.log('Number of prices to fetch received from the main thread:', event.data);
         postMessage(getSortedPrices(event.data));
     };
 

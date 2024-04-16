@@ -67,6 +67,7 @@ const LowestPrice = () => {
                         return (<p key={index}>ETH price: {pricePair.ethPrice.toFixed(6)} USD, gas fee: {pricePair.gasFee.toFixed(6)}</p>)
                     })}
                 </div>
+                {isFetching && <div className="p-4 text-s italic">While price is being processed, try bouncing the balls to see the effect!</div>}
             </div>
         </div>
     )

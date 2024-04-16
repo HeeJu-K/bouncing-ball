@@ -5,13 +5,28 @@ This is a simple project built with [React](https://react.dev/) that uses mouse 
 
 ## Demo Video
 
+### Ball Bounce Demo Video
+
 [![Ball Bounce Demo](http://img.youtube.com/vi/jw5GPUy_MyI/0.jpg)](https://youtu.be/jw5GPUy_MyI)
 
+### Ball Bounce with Web Workers Demo Video
+[![Ball Bounce with Web Workers Demo](http://img.youtube.com/vi/ISQRRiaJIy8/0.jpg)](https://youtu.be/ISQRRiaJIy8)
 
 ## Features
+
+### Ball Bounce
+
 1. Drag and release to throw a ball, the cursor speed will determine the initial speed of the ball.
 2. There are two balls by default, when a ball collides another, the two balls makes inelastic collision.
 3. When a ball collide with the wall, inelastic collision happens and the speed of the ball decreases.
+
+### Ball Bounce with Web Workers
+
+1. Specify amount of ETH prices you wish to fetch.
+2. When `Fetch New Price` button is pressed, web worker randomly generates amount of prices specified in the input field and sorts it.
+2-1. Sorting is a `O(nlogn)` calculation, if you set the number to something very large *(eg. 10^6)*, you will better see the effects of the web worker.
+2-2. While webworker is sorting, try bouncing the balls.
+3. Web worker returns five lowest price to the main thread. The ball bounces on the main thread does not get blocked even during heavy calculations.
 
 
 ### Other Possible Features
