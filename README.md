@@ -22,14 +22,18 @@ This is a simple project built with [React](https://react.dev/) that uses mouse 
 
 ### Ball Bounce with Web Workers
 
-1. Specify amount of ETH prices you wish to fetch.
+0. Webworkers mounted when component loads.
+1. Specify amount of ETH prices you wish to fetch. *(Just using ETH price for demo purpose)*
 2. When `Fetch New Price` button is pressed, web worker randomly generates amount of prices specified in the input field and sorts it.
-2-1. Sorting is a `O(nlogn)` calculation, if you set the number to something very large *(eg. 10^6)*, you will better see the effects of the web worker.
-2-2. While webworker is sorting, try bouncing the balls.
+
+    2-a. Sorting is a `O(nlogn)` calculation, if you set the number to something very large *(eg. 10^6)*, you will better see the effects of the web worker.
+
+    2-b. While webworker is sorting, try bouncing the balls.
 3. Web worker returns five lowest price to the main thread. The ball bounces on the main thread does not get blocked even during heavy calculations.
+4. Webworkers cleaned up when component is unmounted
 
 
-### Other Possible Features
+### Other Possible Features for Ball Bounce
 
 * Provide the selection of ball masses
 * Change number of balls
@@ -39,6 +43,7 @@ This is a simple project built with [React](https://react.dev/) that uses mouse 
 * Add more UI
 
 ## Code Explanation
+### Ball Bounce
 * `function Ball` component draws a Ball on the page
     * it takes color, initial position, and size as argument
     * a `div` with set styles are returned
